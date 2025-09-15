@@ -19,7 +19,7 @@
 // - A line with 2 integers representing the edge to remove:
 //   - The source vertex index (between 1 and N)
 //   - The target vertex index (between 1 and N)
- void main(int argc, char* argv[])
+int main(int argc, char* argv[])
 {
 	 vector<Edge> mstKruskal;
 	 vector<Edge> mstKruskal2;
@@ -44,7 +44,7 @@
 	 if (!outputFile)
 	 {
 		 cout << "Invalid input! Results file could not be opened!" << endl;
-		 return exit(1);
+		 exit(1);
 	 }
 	 mstKruskal = KRUSKAL(Graph);
 	 if (GetTreeWeight(mstKruskal, n, MSTWeight))
@@ -78,4 +78,5 @@
 
 	 }
 	 outputFile.close();
+	 return 0;
 }
