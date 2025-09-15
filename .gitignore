@@ -1,0 +1,28 @@
+# Compiled binaries
+ProjectMST/ProjectMST
+ProjectMST/*.exe
+
+# Visual Studio files
+*.vcxproj.user
+.vs/
+*.sln.DotSettings.user
+
+# Build outputs
+Debug/
+Release/
+x64/
+Win32/
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Output files
+*.out
+output.txt
+results.txt
